@@ -14,12 +14,13 @@
 <meta content="yes" name="apple-mobile-web-app-capable"/>
 <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
 <meta content="telephone=no" name="format-detection"/>
-<link type="text/css" rel="stylesheet" href="assets/css/font-awesome.min.css" />
-<link type="text/css" rel="stylesheet" href="css/main.css" />
-<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">	
-<script src="js/jquery.min.js"></script>
-<script src="js/common.js"></script>
-<script type="text/javascript" src="layer_mobile/layer.js"></script>
+
+<link type="text/css" rel="stylesheet" href="http://wserver.dhu.edu.cn/css/main.css" />
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	
+<script src="http://wserver.dhu.edu.cn/js/jquery.min.js"></script>
+<script src="http://wserver.dhu.edu.cn/js/common.js"></script>
+<script type="text/javascript" src="http://wserver.dhu.edu.cn/layer_mobile/layer.js"></script>
     <script type="text/javascript">
 			window.onload=function()
 			{
@@ -108,7 +109,7 @@
     border-right: 0px;
 }
 .courseUnder{
-   line-height:10px;
+   line-height:30px;
 }
 .courseUnder>span{
     margin-top:8px;
@@ -156,22 +157,7 @@
        </div>
     
 	</div>
-<script>
-  $(function(){
-	  $("#btn_div").css({"margin-left":($(window).width()-80)/2});	 
-	  if($("#shzt").val() ==  "1"){
-		  $("#shzt").val("审核通过");
-		  $("#shzt").css({"color":"#cc0000"});
-	  }else if($("#shzt").val() ==  "2"){
-		  $("#shzt").val("退回");
-		  $("#shyj_tlt").show();
-		  $("#shyj_inp").show();
-	  }else{
-		  $("#shzt").val("未审核");
-	  }
-  })
-  
-</script>
+
 </form>
 </body>
 
