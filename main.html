@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<style type = "text/css">
+    *{margin: 0;padding: 0;}
+    div{position: relative;}
+    div p{position: absolute;left: 235px;top:616px;color:black;font-size:53px;letter-spacing: 4px}
+</style>
+<div>
+<img src="1.jpg"  width="1080" height="2340"/>
+    <p><strong id = "time">2022-11-13 11:13:55</strong></p>
+</div>
+
+
+<script>
+    var show= function(){
+        var date = new Date();
+        var year = date.getFullYear();
+        var month = date.getMonth()+1;
+        month= month<10?"0"+month:month;
+        var day = date.getDate();//获取日期
+        day= day<10?"0"+day:day;
+        var hour = date.getHours();
+        hour= hour<10?"0"+hour:hour;
+        var minute = date.getMinutes();
+        minute= minute<10?"0"+minute:minute;
+        var week = date.getDay();//获取星期
+        var second=date.getSeconds();
+        second= second<10?"0"+second:second;
+        week = "日一二三四五六".charAt(week);
+        week="星期"+week;
+        result=year+"-"+month+"-"+day+" "+hour+":"+minute+":"+second;
+        document.getElementById("time").innerHTML=result;
+    }
+    show();
+    setInterval("show()",1000);
+</script>
+
+</body>
+</html>
